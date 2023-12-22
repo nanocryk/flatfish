@@ -1,21 +1,4 @@
-//! Provide a `ff!` macro to write Fully Qualified Syntax without nesting
-//! turbofishes.
-//! 
-//! Which can be usefull in very generic code when the chain of traits and
-//! associated types can be long and verbose, or in macros generating chains of
-//! traits.
-//!
-//! Syntax is
-//!
-//! ```ignore
-//! ff!(Type | Trait1::Item | Trait2::Item ...)
-//! ```
-//!
-//! which desugars to
-//!
-//! ```ignore
-//! <... <<T as Trait1>::Item as Trait2>::Item ...>
-//! ```
+#![doc = include_str!("../README.md")]
 
 use {
     proc_macro::TokenStream,

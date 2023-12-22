@@ -1,6 +1,10 @@
 [package]
 name = "flatfish"
+authors = [ "nanocryk" ]
+description = "A macro to write Fully Qualified Syntax without nesting turbofishes."
 edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/nanocryk/flatfish"
 version = "0.1.0"
 
 [lib]
